@@ -1,36 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Discount Calculator — Calculate Sale Price & Savings | Tabutility</title>
-    <meta name="description" content="Free discount calculator. Calculate sale price, total savings, discount percentage, or original price instantly. Works for percent off, dollar off, and reverse discount calculations. No sign-up." />
-    <meta name="keywords" content="discount calculator, percent off calculator, sale price calculator, how much is 30% off, savings calculator, original price calculator, free discount calculator" />
-    <link rel="canonical" href="https://discount-calculator.tabutility.com/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://discount-calculator.tabutility.com/" />
-    <meta property="og:title" content="Discount Calculator — Calculate Sale Price & Savings" />
-    <meta property="og:description" content="Calculate sale price, savings, and discount percentage instantly. Free, no sign-up." />
-    <meta property="og:site_name" content="Tabutility" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Discount Calculator — Calculate Sale Price & Savings" />
-    <meta name="twitter:description" content="Calculate sale price, savings, and discount percentage instantly. Free, no sign-up." />
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏷️</text></svg>" />
-    <meta name="robots" content="index, follow" />
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7039091592734005" crossorigin="anonymous"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-78VZWJ5B1W"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-78VZWJ5B1W');
-    </script>
-    <script type="application/ld+json">
-    { "@context": "https://schema.org", "@type": "WebApplication", "name": "Discount Calculator", "url": "https://discount-calculator.tabutility.com", "description": "Free online discount calculator. Calculate sale price, savings, and discount percentage instantly.", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }, "provider": { "@type": "Organization", "name": "Tabutility", "url": "https://tabutility.com" } }
-    </script>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Discount Calculator — Tabutility</title>
+<meta name="description" content="Free discount calculator. Find the sale price, discount amount and savings for any original price and discount percentage."/>
+<meta name="keywords" content="discount calculator, sale price calculator, percentage off calculator, how much is x% off, savings calculator"/>
+<link rel="canonical" href="https://discount-calculator.tabutility.com/"/>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏷️</text></svg>"/>
+<meta property="og:title" content="Discount Calculator"/>
+<meta property="og:description" content="Find the sale price, discount amount and savings for any original price and discount percentage."/>
+<meta property="og:url" content="https://discount-calculator.tabutility.com/"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="Tabutility"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Discount Calculator"/>
+<meta name="twitter:description" content="Find the sale price, discount amount and savings for any original price and discount percentage."/>
+<meta name="robots" content="index, follow"/>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-78VZWJ5B1W"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-78VZWJ5B1W');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7039091592734005" crossorigin="anonymous"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Discount Calculator","url":"https://discount-calculator.tabutility.com/","description":"Free discount calculator. Find the sale price, discount amount and savings for any original price and discount percentage.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"provider":{"@type":"Organization","name":"Tabutility","url":"https://tabutility.com"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Tabutility","item":"https://tabutility.com"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://tabutility.com"},{"@type":"ListItem","position":3,"name":"Discount Calculator","item":"https://discount-calculator.tabutility.com/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I calculate a discount?","acceptedAnswer":{"@type":"Answer","text":"Multiply the original price by the discount percentage and divide by 100 to get the savings amount."}},{"@type":"Question","name":"Can I work out what % off something is?","acceptedAnswer":{"@type":"Answer","text":"Yes — enter the original and sale price in reverse mode."}},{"@type":"Question","name":"Is the Discount Calculator free?","acceptedAnswer":{"@type":"Answer","text":"Yes — completely free, no sign-up needed."}},{"@type":"Question","name":"Does it work on mobile?","acceptedAnswer":{"@type":"Answer","text":"Yes — works on any device."}}]}</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0f172a;color:#f1f5f9;min-height:100vh}
+nav{background:#1e293b;border-bottom:1px solid #334155;padding:14px 24px;display:flex;align-items:center;gap:16px}
+nav a{color:#94a3b8;text-decoration:none;font-size:14px}
+nav a:hover{color:#f1f5f9}
+nav .brand{color:#38bdf8;font-weight:700;font-size:18px}
+.ad-banner{background:#1e293b;border-bottom:1px solid #334155;padding:4px;text-align:center}
+#app{max-width:620px;margin:8px auto;padding:0 16px 40px}
+h1{font-size:26px;font-weight:700;color:#f1f5f9;margin:24px 0 6px;text-align:center}
+.subtitle{color:#94a3b8;font-size:14px;text-align:center;margin-bottom:24px}
+.card{background:#1e293b;border:1px solid #334155;border-radius:14px;padding:24px;margin-bottom:16px}
+.mode-tabs{display:flex;gap:2px;background:#0f172a;border-radius:10px;padding:4px;margin-bottom:22px}
+.mode-tab{flex:1;padding:9px;border:none;border-radius:8px;background:transparent;color:#94a3b8;font-size:14px;font-weight:600;cursor:pointer;transition:.2s}
+.mode-tab.active{background:#38bdf8;color:#0f172a}
+label{display:block;font-size:13px;font-weight:600;color:#94a3b8;margin-bottom:6px;text-transform:uppercase;letter-spacing:.04em;margin-top:14px}
+label:first-of-type{margin-top:0}
+.input-group{position:relative}
+.input-prefix{position:absolute;left:12px;top:50%;transform:translateY(-50%);font-size:16px;color:#64748b}
+.input-suffix{position:absolute;right:12px;top:50%;transform:translateY(-50%);font-size:14px;color:#64748b}
+input[type="number"]{width:100%;background:#0f172a;border:1px solid #334155;border-radius:8px;padding:12px 36px 12px 36px;color:#f1f5f9;font-size:16px;outline:none;-moz-appearance:textfield;transition:border-color .2s}
+input[type="number"]:focus{border-color:#38bdf8}
+input[type="number"]::-webkit-outer-spin-button,input[type="number"]::-webkit-inner-spin-button{-webkit-appearance:none}
+.results{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}
+.res-item{background:#0f172a;border:1px solid #334155;border-radius:10px;padding:16px;text-align:center}
+.res-item.highlight{border-color:#34d399}
+.res-item .val{font-size:26px;font-weight:700;color:#38bdf8}
+.res-item.highlight .val{color:#34d399}
+.res-item .lbl{font-size:12px;color:#94a3b8;margin-top:4px;text-transform:uppercase;letter-spacing:.04em}
+.quick-pcts{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.qpct{padding:7px 12px;border-radius:6px;border:1px solid #334155;background:#0f172a;color:#94a3b8;font-size:13px;cursor:pointer;transition:.2s}
+.qpct:hover{background:#38bdf8;color:#0f172a;border-color:#38bdf8}
+.hidden{display:none}
+</style>
+</head>
+<body>
+<nav><span class="brand">⚡ Tabutility</span><a href="https://tabutility.com">← All Tools</a></nav>
+<div class="ad-banner"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7039091592734005" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
+<div id="app">
+  <h1>🏷️ Discount Calculator</h1>
+  <p class="subtitle">Find sale prices, savings and discount percentages</p>
+  <div class="card">
+    <div class="mode-tabs">
+      <button class="mode-tab active" onclick="setMode('forward')">% Off → Sale Price</button>
+      <button class="mode-tab" onclick="setMode('reverse')">Find Discount %</button>
+    </div>
+
+    <!-- Forward mode -->
+    <div id="forward-mode">
+      <label>Original Price</label>
+      <div class="input-group">
+        <span class="input-prefix">$</span>
+        <input type="number" id="f-orig" placeholder="100.00" min="0" step="0.01" oninput="calcForward()"/>
+      </div>
+      <label>Discount %</label>
+      <div class="input-group">
+        <span class="input-prefix" style="color:#94a3b8;font-size:14px">%</span>
+        <input type="number" id="f-pct" placeholder="20" min="0" max="100" step="0.1" oninput="calcForward()"/>
+      </div>
+      <div class="quick-pcts">
+        <span style="font-size:12px;color:#64748b;align-self:center">Quick:</span>
+        <button class="qpct" onclick="setDiscount(5)">5%</button>
+        <button class="qpct" onclick="setDiscount(10)">10%</button>
+        <button class="qpct" onclick="setDiscount(15)">15%</button>
+        <button class="qpct" onclick="setDiscount(20)">20%</button>
+        <button class="qpct" onclick="setDiscount(25)">25%</button>
+        <button class="qpct" onclick="setDiscount(50)">50%</button>
+      </div>
+      <div class="results">
+        <div class="res-item"><div class="val" id="f-saved">$0.00</div><div class="lbl">You Save</div></div>
+        <div class="res-item highlight"><div class="val" id="f-sale">$0.00</div><div class="lbl">Sale Price</div></div>
+      </div>
+    </div>
+
+    <!-- Reverse mode -->
+    <div id="reverse-mode" class="hidden">
+      <label>Original Price</label>
+      <div class="input-group">
+        <span class="input-prefix">$</span>
+        <input type="number" id="r-orig" placeholder="100.00" min="0" step="0.01" oninput="calcReverse()"/>
+      </div>
+      <label>Sale Price</label>
+      <div class="input-group">
+        <span class="input-prefix">$</span>
+        <input type="number" id="r-sale" placeholder="75.00" min="0" step="0.01" oninput="calcReverse()"/>
+      </div>
+      <div class="results">
+        <div class="res-item highlight"><div class="val" id="r-pct">0%</div><div class="lbl">Discount %</div></div>
+        <div class="res-item"><div class="val" id="r-saved">$0.00</div><div class="lbl">You Save</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="max-width:860px;margin-left:auto;margin-right:auto;margin-top:24px;margin-bottom:8px;padding:0 16px">
+  <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:20px 24px">
+    <h2 style="font-size:15px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:.05em;margin-bottom:14px">Related Tools</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px">
+      <a href="https://percentage-calculator.tabutility.com/" style="display:block;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit">
+        <div style="font-size:13px;font-weight:600;color:#f1f5f9">Percentage Calculator</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">Calculators</div>
+      </a>
+      <a href="https://tip-calculator.tabutility.com/" style="display:block;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit">
+        <div style="font-size:13px;font-weight:600;color:#f1f5f9">Tip Calculator</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">Calculators</div>
+      </a>
+      <a href="https://sales-tax-calculator.tabutility.com/" style="display:block;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit">
+        <div style="font-size:13px;font-weight:600;color:#f1f5f9">Sales Tax Calculator</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">Calculators</div>
+      </a>
+      <a href="https://roi.tabutility.com/" style="display:block;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit">
+        <div style="font-size:13px;font-weight:600;color:#f1f5f9">ROI Calculator</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">Calculators</div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div style="max-width:860px;margin-left:auto;margin-right:auto;margin-top:8px;margin-bottom:24px;padding:0 16px">
+  <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:20px 24px">
+    <h2 style="font-size:15px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px">Frequently Asked Questions</h2>
+    <div style="border-bottom:1px solid rgba(255,255,255,0.08);padding:14px 0">
+      <div style="font-size:14px;font-weight:600;color:#f1f5f9;margin-bottom:6px">How do I calculate a discount?</div>
+      <div style="font-size:13px;color:#94a3b8;line-height:1.5">Multiply the original price by the discount percentage and divide by 100 to get the savings amount.</div>
+    </div>
+    <div style="border-bottom:1px solid rgba(255,255,255,0.08);padding:14px 0">
+      <div style="font-size:14px;font-weight:600;color:#f1f5f9;margin-bottom:6px">Can I work out what % off something is?</div>
+      <div style="font-size:13px;color:#94a3b8;line-height:1.5">Yes — enter the original and sale price in reverse mode.</div>
+    </div>
+    <div style="border-bottom:1px solid rgba(255,255,255,0.08);padding:14px 0">
+      <div style="font-size:14px;font-weight:600;color:#f1f5f9;margin-bottom:6px">Is this free?</div>
+      <div style="font-size:13px;color:#94a3b8;line-height:1.5">Yes — completely free, no sign-up needed.</div>
+    </div>
+    <div style="padding:14px 0">
+      <div style="font-size:14px;font-weight:600;color:#f1f5f9;margin-bottom:6px">Works on mobile?</div>
+      <div style="font-size:13px;color:#94a3b8;line-height:1.5">Yes — works on any device.</div>
+    </div>
+  </div>
+</div>
+
+<div style="text-align:center;padding:8px">
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7039091592734005" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+</div>
+
+<script>
+let mode = 'forward';
+function setMode(m) {
+  mode = m;
+  document.getElementById('forward-mode').classList.toggle('hidden', m!=='forward');
+  document.getElementById('reverse-mode').classList.toggle('hidden', m!=='reverse');
+  document.querySelectorAll('.mode-tab').forEach((t,i)=>t.classList.toggle('active',(i===0&&m==='forward')||(i===1&&m==='reverse')));
+}
+function setDiscount(pct) {
+  document.getElementById('f-pct').value = pct;
+  calcForward();
+}
+function calcForward() {
+  const orig = parseFloat(document.getElementById('f-orig').value) || 0;
+  const pct = parseFloat(document.getElementById('f-pct').value) || 0;
+  const saved = orig * pct / 100;
+  const sale = orig - saved;
+  document.getElementById('f-saved').textContent = '$' + saved.toFixed(2);
+  document.getElementById('f-sale').textContent = '$' + sale.toFixed(2);
+}
+function calcReverse() {
+  const orig = parseFloat(document.getElementById('r-orig').value) || 0;
+  const sale = parseFloat(document.getElementById('r-sale').value) || 0;
+  if (orig > 0) {
+    const saved = orig - sale;
+    const pct = (saved / orig) * 100;
+    document.getElementById('r-pct').textContent = pct.toFixed(1) + '%';
+    document.getElementById('r-saved').textContent = '$' + saved.toFixed(2);
+  } else {
+    document.getElementById('r-pct').textContent = '0%';
+    document.getElementById('r-saved').textContent = '$0.00';
+  }
+}
+</script>
+</body>
 </html>
