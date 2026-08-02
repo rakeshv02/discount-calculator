@@ -232,5 +232,41 @@ function calcReverse() {
   }
 })();
 </script>
+<section id="seo-content">
+  <style>
+    #seo-content{max-width:760px;margin:2.5rem auto;padding:0 1.25rem 3rem;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;color:#334155;line-height:1.7}
+    #seo-content h2{font-size:1.35rem;color:#0f172a;margin:2rem 0 .75rem}
+    #seo-content h3{font-size:1.05rem;color:#0f172a;margin:1.25rem 0 .5rem}
+    #seo-content p,#seo-content li{font-size:.95rem}
+    #seo-content .example{background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:1rem 1.25rem;margin:1rem 0}
+    @media (prefers-color-scheme:dark){#seo-content{color:#cbd5e1}#seo-content h2,#seo-content h3{color:#f1f5f9}#seo-content .example{background:#1e293b;border-color:#334155}}
+  </style>
+  <p>This discount calculator turns any advertised "percent off" into the real numbers that matter: how much you actually save and what you'll pay at the register. Enter an original price and a discount percentage to see the sale price instantly, or switch to reverse mode to work out the discount percentage from a price you were charged. It's built for shoppers comparing deals, resellers pricing markdowns, and anyone tired of doing sale-day math in their head.</p>
+
+  <h2>How the Discount Calculator Works</h2>
+  <p>A discount is simply a percentage taken off an original price. The tool multiplies the original price by the discount rate to find your savings, then subtracts that from the original to give the sale price. The formula is <strong>Savings = Original Price × (Discount % ÷ 100)</strong>, and <strong>Sale Price = Original Price − Savings</strong>.</p>
+  <p>Reverse mode answers the opposite question. If you know the original and final prices, it finds the discount percentage using <strong>Discount % = (Original − Sale) ÷ Original × 100</strong>. That's handy for checking whether a "50% off" tag was applied correctly, or for figuring out the effective discount after a coupon stacks on a clearance price.</p>
+
+  <div class="example">
+    <strong>Example 1:</strong> A jacket is listed at $120 with 30% off. Savings = 120 × 0.30 = $36, so the sale price is $120 − $36 = <strong>$84</strong>.
+  </div>
+  <div class="example">
+    <strong>Example 2 (reverse):</strong> You paid $63 for something originally priced $90. Discount = (90 − 63) ÷ 90 × 100 = <strong>30% off</strong>, a savings of $27.
+  </div>
+
+  <h2>Frequently Asked Questions</h2>
+  <h3>How do I calculate a percentage discount on a price?</h3>
+  <p>Multiply the original price by the discount rate expressed as a decimal (for example, 25% becomes 0.25) to get the amount you save. Subtract that saving from the original price to find the final sale price. This calculator does both steps automatically as you type.</p>
+
+  <h3>How do I work out what percent off something is?</h3>
+  <p>Divide the amount you saved by the original price, then multiply by 100. If a $200 item cost you $150, you saved $50, and $50 ÷ $200 × 100 = 25% off. Use reverse mode to do this without any manual arithmetic.</p>
+
+  <h3>Can I stack two discounts, like 20% off plus an extra 10%?</h3>
+  <p>Stacked discounts apply one after the other, not added together, so 20% then 10% is not 30% off. Take 20% off first, then 10% off the reduced price. On a $100 item that's $80, then $72, an effective discount of 28%.</p>
+
+  <h3>Does the sale price include sales tax?</h3>
+  <p>No. This calculator shows the discounted price before tax, since tax rates vary by location. Add your local sales tax to the sale price to estimate the final checkout total, or use a dedicated sales tax calculator for the exact amount.</p>
+</section>
+
 </body>
 </html>
